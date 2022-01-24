@@ -15,3 +15,16 @@ elif(a==5):
     total=b*1.5
     print("Total: R$ %.2f" %total)
     
+#OR
+
+Products = {1:4, 2:4.5, 3:5, 4:2, 5:1.5}
+
+X,Y = list(map(int, input().split(" ")))
+
+while X <= 5:
+    Value = Products[X]
+    Quantity = Y
+    
+    Total = Value * Quantity
+    print(f"Total: R$ {Total:.2f}")
+    break
